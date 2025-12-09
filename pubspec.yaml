@@ -1,0 +1,55 @@
+name: weather_master_pro
+description: A mini cross-platform weather mobile app using OpenWeatherMap API
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.9
+
+  # HTTP
+  dio: ^5.4.0
+
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Location
+  geolocator: ^10.1.0
+  permission_handler: ^11.0.1
+
+  # Environment Variables
+  flutter_dotenv: ^5.1.0
+
+  # Utilities
+  intl: ^0.18.1
+  equatable: ^2.0.5
+
+  # Optional: Charts & Animations
+  fl_chart: ^0.65.0
+  lottie: ^2.7.0
+
+  # UI
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+  mockito: ^5.4.4
+  mocktail: ^1.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - .env
+
